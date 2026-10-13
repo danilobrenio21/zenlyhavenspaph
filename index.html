@@ -55,16 +55,23 @@
         }
         @keyframes floatLeaf {
             0% { transform: translateY(-20px) rotate(0deg); opacity: 0; }
-            50% { opacity: 0.6; }
-            100% { transform: translateY(500px) rotate(360deg); opacity: 0; }
+            30% { opacity: 0.5; }
+            70% { opacity: 0.5; }
+            100% { transform: translateY(600px) rotate(360deg); opacity: 0; }
+        }
+        .floating-olive-container {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
         }
         .floating-olive {
             position: absolute;
-            animation: floatLeaf 8s linear infinite;
+            animation: floatLeaf 10s linear infinite;
             color: #556b2f;
-            font-size: 1.5rem;
-            pointer-events: none;
-            z-index: 1;
+            opacity: 0.4;
+            font-size: 1.25rem;
         }
     </style>
 </head>
@@ -173,14 +180,12 @@
         </div>
     </section>
 
-    <!-- About Section with Floating Olive Leaves & Fresh Fruit Motif -->
+    <!-- About Section -->
     <section id="about" class="py-24 relative overflow-hidden bg-sand-200/60">
-        <!-- Animated Floating Olive Leaves / Fruits Background Elements -->
-        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-olive-container">
             <div class="floating-olive" style="left: 10%; animation-delay: 0s;"><i class="fa-solid fa-seedling"></i></div>
-            <div class="floating-olive" style="left: 30%; animation-delay: 3s;"><i class="fa-solid fa-spa"></i></div>
-            <div class="floating-olive" style="left: 70%; animation-delay: 1s;"><i class="fa-solid fa-leaf"></i></div>
-            <div class="floating-olive" style="left: 85%; animation-delay: 5s;"><i class="fa-solid fa-seedling"></i></div>
+            <div class="floating-olive" style="left: 45%; animation-delay: 3s;"><i class="fa-solid fa-spa"></i></div>
+            <div class="floating-olive" style="left: 80%; animation-delay: 1.5s;"><i class="fa-solid fa-leaf"></i></div>
         </div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -221,8 +226,14 @@
     </section>
 
     <!-- Complete Spa Menu Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-20 bg-white relative overflow-hidden">
+        <div class="floating-olive-container">
+            <div class="floating-olive" style="left: 20%; animation-delay: 2s;"><i class="fa-solid fa-leaf"></i></div>
+            <div class="floating-olive" style="left: 65%; animation-delay: 4s;"><i class="fa-solid fa-seedling"></i></div>
+            <div class="floating-olive" style="left: 90%; animation-delay: 0.5s;"><i class="fa-solid fa-spa"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Full Treatment Menu</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Services & Rates</h2>
@@ -437,8 +448,14 @@
     </section>
 
     <!-- Packages & Rituals Section -->
-    <section id="packages" class="py-20 bg-sand-200/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="packages" class="py-20 bg-sand-200/50 relative overflow-hidden">
+        <div class="floating-olive-container">
+            <div class="floating-olive" style="left: 15%; animation-delay: 1s;"><i class="fa-solid fa-spa"></i></div>
+            <div class="floating-olive" style="left: 50%; animation-delay: 3.5s;"><i class="fa-solid fa-leaf"></i></div>
+            <div class="floating-olive" style="left: 85%; animation-delay: 2s;"><i class="fa-solid fa-seedling"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Value Combos & Duos</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Packages & Couple Rituals</h2>
@@ -581,14 +598,19 @@
     </section>
 
     <!-- Auto-Scrolling Facility Gallery Section -->
-    <section id="facility" class="py-20 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
+    <section id="facility" class="py-20 bg-white overflow-hidden relative">
+        <div class="floating-olive-container">
+            <div class="floating-olive" style="left: 25%; animation-delay: 2.5s;"><i class="fa-solid fa-seedling"></i></div>
+            <div class="floating-olive" style="left: 75%; animation-delay: 0.8s;"><i class="fa-solid fa-leaf"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12 relative z-10">
             <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Sanctuary Views</span>
             <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Explore Our Facility</h2>
             <p class="text-slate-600">Take a visual journey through our relaxing ambiance, private rooms, and clean amenities.</p>
         </div>
 
-        <div class="relative w-full overflow-hidden py-4">
+        <div class="relative w-full overflow-hidden py-4 z-10">
             <div class="animate-gallery flex gap-6">
                 <!-- Gallery Item Set 1 -->
                 <div class="w-80 h-64 rounded-3xl overflow-hidden shadow-lg border border-sand-300 flex-shrink-0 relative group">
@@ -645,8 +667,13 @@
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-sand-200/50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="reviews" class="py-20 bg-sand-200/50 relative overflow-hidden">
+        <div class="floating-olive-container">
+            <div class="floating-olive" style="left: 10%; animation-delay: 1.2s;"><i class="fa-solid fa-leaf"></i></div>
+            <div class="floating-olive" style="left: 60%; animation-delay: 3s;"><i class="fa-solid fa-spa"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Client Testimonials</span>
                 <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Loved by Our Guests</h2>
@@ -808,8 +835,13 @@
     </section>
 
     <!-- Location & Contact Section -->
-    <section id="location" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="location" class="py-20 bg-white relative overflow-hidden">
+        <div class="floating-olive-container">
+            <div class="floating-olive" style="left: 30%; animation-delay: 1.8s;"><i class="fa-solid fa-seedling"></i></div>
+            <div class="floating-olive" style="left: 80%; animation-delay: 3.2s;"><i class="fa-solid fa-leaf"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
                     <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Find Us</span>
