@@ -1,0 +1,40 @@
+/* Custom Global Styling for Zenly Haven Spa */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #fdfbf7;
+    color: #2d3818;
+}
+
+h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Ensure high contrast and readability on dark sections and footers */
+section#booking {
+    background-color: #1a230e !important;
+}
+
+section.bg-spa-950, footer {
+    background-color: #1a230e !important;
+    color: #f7f2e8 !important;
+}
+
+footer a {
+    color: #f7f2e8 !important;
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+/* Custom smooth transitions */
+.transition {
+    transition: all 0.3s ease-in-out;
+}

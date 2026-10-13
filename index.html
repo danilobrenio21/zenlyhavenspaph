@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenly Haven Spa | Harmony in Every Touch | Marikina City</title>
+    <meta name="description" content="Experience deep relaxation, authentic Moroccan baths, and therapeutic massages at Zenly Haven Spa located in Concepcion Uno, Marikina City.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spa: {
+                            50: '#f4f7f4',
+                            100: '#e3ece3',
+                            600: '#556b2f',
+                            700: '#435524',
+                            900: '#2d3818',
+                        },
+                        sand: {
+                            100: '#fdfbf7',
+                            200: '#f7f2e8',
+                            300: '#eedfc8',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-sand-100 text-slate-800 font-sans antialiased selection:bg-spa-600 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-spa-900 text-sand-200 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
+        🎉 <span class="font-bold underline decoration-amber-400">Birthday Month Special</span>: Get 10% OFF using promo code <span class="bg-spa-700 px-2 py-0.5 rounded text-white font-bold">BDAY10</span>! (ID required upon visit)
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-sand-300 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="images/logo.jpg" alt="Zenly Haven Spa Logo" class="w-12 h-12 rounded-full object-cover shadow-md group-hover:scale-105 transition">
+                <div>
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-spa-900 block leading-none">Zenly Haven Spa</span>
+                    <span class="text-xs uppercase tracking-widest text-spa-600 font-semibold mt-1 block">Harmony in Every Touch</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-700">
+                <a href="#about" class="hover:text-spa-600 transition">About</a>
+                <a href="#services" class="hover:text-spa-600 transition">Services & Menu</a>
+                <a href="#packages" class="hover:text-spa-600 transition">Packages & Rituals</a>
+                <a href="#reviews" class="hover:text-spa-600 transition">Reviews</a>
+                <a href="#location" class="hover:text-spa-600 transition">Location & Hours</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="tel:09452352792" class="text-xs text-slate-700 font-semibold hover:text-spa-600 flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-spa-600"></i> 0945 235 2792
+                </a>
+                <a href="#booking" class="bg-spa-600 hover:bg-spa-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition transform hover:-translate-y-0.5">
+                    Book Appointment
+                </a>
+            </div>
+
+            <button id="menu-btn" class="md:hidden text-spa-900 p-2 focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-sand-300 px-6 py-5 space-y-4 shadow-xl">
+            <a href="#about" class="block text-slate-700 font-medium hover:text-spa-600">About</a>
+            <a href="#services" class="block text-slate-700 font-medium hover:text-spa-600">Services & Menu</a>
+            <a href="#packages" class="block text-slate-700 font-medium hover:text-spa-600">Packages & Rituals</a>
+            <a href="#reviews" class="block text-slate-700 font-medium hover:text-spa-600">Reviews</a>
+            <a href="#location" class="block text-slate-700 font-medium hover:text-spa-600">Location & Hours</a>
+            <div class="pt-4 border-t border-sand-200 flex flex-col gap-3">
+                <a href="tel:09452352792" class="text-sm text-slate-700 font-semibold flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-spa-600"></i> 0945 235 2792
+                </a>
+                <a href="#booking" class="bg-spa-600 text-center text-white py-2.5 rounded-full text-sm font-semibold shadow">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-spa-950 text-white overflow-hidden py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center mix-blend-overlay" style="background-image: url('images/hero.jpg');"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-spa-950 via-spa-950/70 to-transparent"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <span class="inline-block bg-spa-600/40 border border-spa-600/60 text-sand-100 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-6 backdrop-blur-sm">
+                ✨ Concepcion Uno, Marikina City
+            </span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 max-w-4xl mx-auto leading-tight text-white drop-shadow-md">
+                Your Sanctuary for Complete Mind & Body Reset
+            </h1>
+            <p class="text-base sm:text-xl text-sand-200 max-w-2xl mx-auto mb-10 font-light leading-relaxed drop-shadow">
+                Indulge in soothing treatments, rejuvenate your spirit, and experience ultimate serenity where professional touch meets pure tranquility.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#booking" class="w-full sm:w-auto bg-spa-600 hover:bg-spa-700 text-white px-8 py-4 rounded-full font-semibold text-base shadow-lg transition transform hover:-translate-y-1">
+                    Book Your Session Now
+                </a>
+                <a href="#services" class="w-full sm:w-auto bg-white/15 hover:bg-white/25 border border-white/40 text-white px-8 py-4 rounded-full font-semibold text-base backdrop-blur-sm transition">
+                    Explore Spa Menu
+                </a>
+            </div>
+
+            <div class="mt-16 pt-10 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-sand-200 text-sm">
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-star text-amber-400 text-lg"></i>
+                    <span class="font-semibold text-white">4.9 / 5.0 Rating</span> (Google & FB)
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-clock text-amber-400 text-lg"></i>
+                    <span class="font-semibold text-white">Open Daily</span> 2 PM – 2 AM
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-shield-heart text-amber-400 text-lg"></i>
+                    <span class="font-semibold text-white">Expert Therapists</span>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-spa text-amber-400 text-lg"></i>
+                    <span class="font-semibold text-white">Authentic Moroccan Bath</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-sand-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Welcome to Zenly Haven</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-spa-900 mb-6 leading-snug">
+                        Where Every Detail is Crafted for Your Deepest Relaxation
+                    </h2>
+                    <p class="text-slate-700 mb-6 leading-relaxed font-normal">
+                        Located right in the heart of Marikina City (1 C. Bautista St, Concepcion Uno), Zenly Haven Spa was created as an escape from the relentless pace of daily life. From the moment you step through our doors, our warm lighting, calming aromas, and skilled therapists wrap you in pure comfort.
+                    </p>
+                    <p class="text-slate-700 mb-8 leading-relaxed">
+                        Whether you are seeking relief from a frozen shoulder, recovering from an intense workout, experiencing pregnancy or post-natal recovery, or looking to revitalize your skin with our authentic Moroccan Bath, our dedicated team ensures every touch leaves you renewed.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-sand-300">
+                            <span class="block font-serif text-3xl font-bold text-spa-600 mb-1">100%</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-wider font-semibold">Recommended Experience</span>
+                        </div>
+                        <div class="bg-white p-5 rounded-2xl shadow-sm border border-sand-300">
+                            <span class="block font-serif text-3xl font-bold text-spa-600 mb-1">2 PM – 2 AM</span>
+                            <span class="text-xs text-slate-600 uppercase tracking-wider font-semibold">Convenient Nightly Hours</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="images/hero.jpg" alt="Zenly Haven Spa interior ambiance" class="w-full h-[450px] object-cover hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-spa-900 text-white p-6 rounded-2xl shadow-xl hidden sm:block max-w-xs border border-spa-700">
+                        <p class="font-serif italic text-sm mb-2">"Haven is an apt description for this spa. Every detail was seen to from the moment I walked in."</p>
+                        <span class="text-xs text-amber-400 font-semibold">— Verified Guest Review</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Spa Menu Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Full Treatment Menu</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Services & Rates</h2>
+                <p class="text-slate-600">Explore our complete range of professional massages, holistic therapies, and cleansing baths.</p>
+            </div>
+
+            <!-- Best Seller / Signature Highlight -->
+            <div class="bg-spa-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl mb-12 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-spa-600/20 rounded-full blur-3xl"></div>
+                <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+                    <div>
+                        <span class="bg-amber-400 text-spa-950 font-bold text-xs uppercase px-3 py-1 rounded-full">Best Seller</span>
+                        <h3 class="font-serif text-3xl font-bold text-white mt-3 mb-2">Zenly Signature Massage</h3>
+                        <p class="text-sand-200 text-sm max-w-xl leading-relaxed">
+                            A powerful combination of Swedish, Shiatsu, and Thai massage, enhanced with added lymphatic massage and hot compress.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 bg-spa-950/60 p-6 rounded-2xl border border-spa-700">
+                        <div class="text-center px-4">
+                            <span class="text-xs text-sand-300 block font-medium">90 min</span>
+                            <span class="font-serif text-2xl font-bold text-amber-400">₱900</span>
+                        </div>
+                        <div class="hidden sm:block w-px bg-spa-700"></div>
+                        <div class="text-center px-4">
+                            <span class="text-xs text-sand-300 block font-medium">120 min</span>
+                            <span class="font-serif text-2xl font-bold text-amber-400">₱1,200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service Categories Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                
+                <!-- Whole Body Massages -->
+                <div class="bg-sand-100 rounded-3xl p-8 border border-sand-300 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-spa-600 text-white rounded-xl flex items-center justify-center text-xl shadow">
+                                <i class="fa-solid fa-hands-bubbles"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-spa-900">Whole Body Massage</h3>
+                        </div>
+                        
+                        <div class="space-y-6 divide-y divide-sand-300/60 text-sm">
+                            <div class="pt-4 first:pt-0">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Swedish Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱399</span>
+                                        <span>90m: ₱600</span>
+                                        <span>120m: ₱800</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A gentle full-body massage using long, flowing strokes to relieve tension, improve circulation, and promote deep relaxation.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Combination Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱550</span>
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A blend of Swedish, Shiatsu, Thai, and lymphatic techniques with hot compress for deep relaxation and tension relief.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Hilot Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱550</span>
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A traditional Filipino massage that relieves muscle tension, improves circulation, and restores body balance.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Deep Tissue Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱600</span>
+                                        <span>90m: ₱800</span>
+                                        <span>120m: ₱1,000</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">Uses firm pressure to target deep muscle tension, relieve chronic aches, and improve mobility.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Traditional Hilot</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A traditional Filipino healing massage that relieves muscle tension, restores balance, and promotes overall wellness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialized & Wellness Care -->
+                <div class="bg-sand-100 rounded-3xl p-8 border border-sand-300 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 bg-spa-600 text-white rounded-xl flex items-center justify-center text-xl shadow">
+                                <i class="fa-solid fa-spa"></i>
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-spa-900">Specialized Treatments</h3>
+                        </div>
+
+                        <div class="space-y-6 divide-y divide-sand-300/60 text-sm">
+                            <div class="pt-4 first:pt-0">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Pre Natal Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱550</span>
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A gentle massage designed for pregnant women to relieve body aches, reduce stress, and improve comfort and relaxation.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Post Natal Massage</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱550</span>
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A restorative massage for new mothers that helps relieve body tension, reduce fatigue, and support recovery after childbirth.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Foot Reflex</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱550</span>
+                                        <span>90m: ₱750</span>
+                                        <span>120m: ₱950</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A therapeutic foot massage that applies pressure to reflex points to relieve stress, improve circulation, and promote body balance.</p>
+                            </div>
+
+                            <div class="pt-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h4 class="font-bold text-spa-900 text-base">Lomi-Lomi</h4>
+                                    <div class="text-right text-xs space-x-2 font-semibold text-spa-700">
+                                        <span>60m: ₱600</span>
+                                        <span>90m: ₱800</span>
+                                        <span>120m: ₱1,000</span>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 text-xs">A traditional Hawaiian massage using long, flowing strokes to relax muscles, release tension, and promote deep relaxation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Moroccan Bath Rituals Menu -->
+            <div class="bg-spa-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl relative overflow-hidden">
+                <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-amber-400/10 rounded-full blur-2xl"></div>
+                <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-amber-400 text-spa-950 rounded-xl flex items-center justify-center text-xl shadow font-bold">
+                            <i class="fa-solid fa-water"></i>
+                        </div>
+                        <div>
+                            <span class="text-amber-400 font-bold uppercase tracking-widest text-xs block">Signature Exfoliation</span>
+                            <h3 class="font-serif text-3xl font-bold text-white">Authentic Moroccan Bath</h3>
+                        </div>
+                    </div>
+                    <p class="text-sand-200 text-sm mb-8 max-w-3xl leading-relaxed">
+                        An authentic traditional Moroccan hammam-inspired body ritual using steam, black soap, and exfoliation to deeply cleanse the skin, remove dead cells, and leave the body smooth and refreshed.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-spa-950/70 p-6 rounded-2xl border border-spa-700 flex justify-between items-center">
+                            <div>
+                                <span class="bg-spa-600 text-white text-xs px-2.5 py-0.5 rounded-full font-semibold">45 min</span>
+                                <h4 class="font-serif font-bold text-lg mt-2 text-white">Purity Ritual</h4>
+                                <p class="text-xs text-sand-300 mt-1">Steam, Black Soap, Body Scrub, and Shower for deep cleansing and skin refreshment.</p>
+                            </div>
+                            <span class="font-serif text-2xl font-bold text-amber-400 pl-4">₱1,500</span>
+                        </div>
+
+                        <div class="bg-spa-950/70 p-6 rounded-2xl border border-spa-700 flex justify-between items-center">
+                            <div>
+                                <span class="bg-amber-400 text-spa-950 text-xs px-2.5 py-0.5 rounded-full font-bold">2 hrs</span>
+                                <h4 class="font-serif font-bold text-lg mt-2 text-white">Royal Haven Ritual</h4>
+                                <p class="text-xs text-sand-300 mt-1">Steam, Black Soap, Body Scrub, Shower, 1-hour Combination Massage, plus Hot Stone or Ventosa.</p>
+                            </div>
+                            <span class="font-serif text-2xl font-bold text-amber-400 pl-4">₱2,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Packages & Rituals Section -->
+    <section id="packages" class="py-20 bg-sand-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Value Combos & Duos</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Packages & Couple Rituals</h2>
+                <p class="text-slate-600">Immerse yourself in our curated 2-hour multi-step packages and shared couple experiences.</p>
+            </div>
+
+            <!-- Zenly Couple Packages -->
+            <div class="mb-16">
+                <div class="text-center mb-8">
+                    <span class="bg-spa-600 text-white text-xs font-bold uppercase px-4 py-1.5 rounded-full">Shared Sanctuaries</span>
+                    <h3 class="font-serif text-3xl font-bold text-spa-900 mt-3">Zenly Couple Packages</h3>
+                    <p class="text-slate-600 text-sm max-w-2xl mx-auto mt-2">Escape the hustle of daily life and reconnect in a sanctuary designed just for two with therapeutic warmth and dedicated care.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="font-serif text-2xl font-bold text-spa-900">The Serenity Scape (Package A)</h4>
+                                <span class="bg-spa-100 text-spa-800 font-bold text-xs px-3 py-1 rounded-full">90 min Each</span>
+                            </div>
+                            <p class="text-slate-700 text-sm mb-6 leading-relaxed">
+                                Unwind side-by-side with a 60-minute gentle to moderate Swedish massage, enhanced by your choice of deeply comforting Hot Stones or traditional Ventosa. Complete your shared relaxation journey with a melting 30-minute Head or Foot massage to ease away any remaining tension.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-sand-200 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-slate-500 block font-medium">For Two Persons</span>
+                                <span class="font-serif text-2xl font-bold text-spa-900">₱1,300</span>
+                            </div>
+                            <a href="#booking" class="bg-spa-600 hover:bg-spa-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow transition">
+                                Book Package A
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <h4 class="font-serif text-2xl font-bold text-spa-900">The Deep Zen Fusion (Package B)</h4>
+                                <span class="bg-amber-100 text-amber-900 font-bold text-xs px-3 py-1 rounded-full">90 min Each</span>
+                            </div>
+                            <p class="text-slate-700 text-sm mb-6 leading-relaxed">
+                                Designed for couples seeking ultimate physical relief and deeper relaxation. Enjoy a powerful 60-minute Combination Massage with moderate to hard pressure, paired with the therapeutic warmth of Hot Stones or Ventosa. Finish with a revitalizing 30-minute Head or Foot massage that leaves you both floating in total bliss.
+                            </p>
+                        </div>
+                        <div class="pt-6 border-t border-sand-200 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-slate-500 block font-medium">For Two Persons</span>
+                                <span class="font-serif text-2xl font-bold text-spa-900">₱1,600</span>
+                            </div>
+                            <a href="#booking" class="bg-spa-600 hover:bg-spa-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow transition">
+                                Book Package B
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zenly 2 Hours Packages -->
+            <div>
+                <div class="text-center mb-8">
+                    <span class="bg-spa-600 text-white text-xs font-bold uppercase px-4 py-1.5 rounded-full">Extended Rejuvenation</span>
+                    <h3 class="font-serif text-3xl font-bold text-spa-900 mt-3">Zenly 2 Hours Packages</h3>
+                    <p class="text-slate-600 text-sm max-w-2xl mx-auto mt-2">Comprehensive multi-step wellness rituals crafted for total mental and physical restoration.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                    <div class="bg-white rounded-3xl p-6 shadow-md border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-spa-600 bg-spa-50 px-2.5 py-1 rounded-full">2 Hours</span>
+                            <h4 class="font-serif text-xl font-bold text-spa-900 mt-3 mb-2">Relaxation Flow (Pkg 1)</h4>
+                            <p class="text-slate-600 text-xs mb-4">A gentle full-body relaxation to ease stress and tension.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-700 mb-6">
+                                <li>• 90 mins Swedish Massage</li>
+                                <li>• Hot Stone or Ventosa</li>
+                                <li>• 30 mins Head Massage</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-sand-200 flex items-center justify-between">
+                            <span class="font-serif text-xl font-bold text-spa-900">₱1,100</span>
+                            <a href="#booking" class="text-xs font-bold text-spa-600 hover:underline">Book &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 shadow-md border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-spa-600 bg-spa-50 px-2.5 py-1 rounded-full">2 Hours</span>
+                            <h4 class="font-serif text-xl font-bold text-spa-900 mt-3 mb-2">Balance Therapy (Pkg 2)</h4>
+                            <p class="text-slate-600 text-xs mb-4">A balanced treatment to relieve muscle tension and improve circulation.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-700 mb-6">
+                                <li>• 90 mins Combination Massage</li>
+                                <li>• Hot Stone or Ventosa</li>
+                                <li>• 30 mins Head & Foot Massage</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-sand-200 flex items-center justify-between">
+                            <span class="font-serif text-xl font-bold text-spa-900">₱1,300</span>
+                            <a href="#booking" class="text-xs font-bold text-spa-600 hover:underline">Book &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 shadow-md border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-spa-600 bg-spa-50 px-2.5 py-1 rounded-full">2 Hours</span>
+                            <h4 class="font-serif text-xl font-bold text-spa-900 mt-3 mb-2">Zenly Signature Ritual (Pkg 3)</h4>
+                            <p class="text-slate-600 text-xs mb-4">Full-body relaxation paired with exfoliating scrub.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-700 mb-6">
+                                <li>• 30 mins Body Scrub</li>
+                                <li>• 90 mins Zenly Signature Massage</li>
+                                <li>• Hot Stone or Ventosa</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-sand-200 flex items-center justify-between">
+                            <span class="font-serif text-xl font-bold text-spa-900">₱1,400</span>
+                            <a href="#booking" class="text-xs font-bold text-spa-600 hover:underline">Book &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-3xl p-6 shadow-md border border-sand-300 flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-full">Ultimate</span>
+                            <h4 class="font-serif text-xl font-bold text-spa-900 mt-3 mb-2">Ultimate Zen Experience (Pkg 4)</h4>
+                            <p class="text-slate-600 text-xs mb-4">Full luxury experience combining exfoliation, foot care, and deep relaxation.</p>
+                            <ul class="space-y-1.5 text-xs text-slate-700 mb-6">
+                                <li>• 30 mins Foot Spa & Body Scrub</li>
+                                <li>• 60 mins Combination Massage</li>
+                                <li>• Hot Stone or Ventosa</li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-sand-200 flex items-center justify-between">
+                            <span class="font-serif text-xl font-bold text-spa-900">₱1,600</span>
+                            <a href="#booking" class="text-xs font-bold text-spa-600 hover:underline">Book &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Client Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-spa-900 mb-4">Loved by Our Guests</h2>
+                <p class="text-slate-600">Read genuine feedback from visitors who experienced our Moroccan baths and therapeutic massages.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-sand-100 rounded-3xl p-8 border border-sand-300 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-800 text-sm italic leading-relaxed mb-6">
+                            "I honestly didn't expect the experience I had at Zenly Haven Spa. It was my first time trying their Moroccan bath, and I completely lost track of time. My skin felt super smooth and my body felt light!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-sand-300">
+                        <div class="w-10 h-10 rounded-full bg-spa-600 text-white font-bold flex items-center justify-center text-sm">D</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-spa-900">Danilo Brenio</h4>
+                            <span class="text-xs text-slate-600">Google Local Guide Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand-100 rounded-3xl p-8 border border-sand-300 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-800 text-sm italic leading-relaxed mb-6">
+                            "The ambiance is wonderful, calm, and truly relaxing from the moment you step in. I chose a deep tissue massage with Ms. Anna, and she managed to relieve the tension in my frozen shoulder completely!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-sand-300">
+                        <div class="w-10 h-10 rounded-full bg-spa-600 text-white font-bold flex items-center justify-center text-sm">G</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-spa-900">Geraldine Luceñada</h4>
+                            <span class="text-xs text-slate-600">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-sand-100 rounded-3xl p-8 border border-sand-300 flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-800 text-sm italic leading-relaxed mb-6">
+                            "The place is clean, smells great, and has such a relaxing atmosphere. Ms. Pauline was very sweet and attentive. I loved my first visit and I'm definitely looking forward to coming back!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-sand-300">
+                        <div class="w-10 h-10 rounded-full bg-spa-600 text-white font-bold flex items-center justify-center text-sm">J</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-spa-900">Jovilyn Delvalle</h4>
+                            <span class="text-xs text-slate-600">Verified Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-spa-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-cover bg-center" style="background-image: url('images/hero.jpg');"></div>
+        
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-amber-400 font-semibold uppercase tracking-widest text-xs block mb-3">Reserve Your Spot</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4 text-white">Book Your Appointment</h2>
+                <p class="text-sand-200 text-sm">Fill out the form below to request your slot. We will confirm your appointment via phone or SMS shortly.</p>
+            </div>
+
+            <form id="booking-form" class="bg-white text-slate-900 rounded-3xl p-8 sm:p-10 shadow-2xl border border-sand-300 space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Full Name *</label>
+                        <input type="text" id="name" required class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Mobile Number *</label>
+                        <input type="tel" id="phone" required class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium" placeholder="09XXXXXXXXX">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="service" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Select Service / Package *</label>
+                        <select id="service" required class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium">
+                            <option value="">-- Choose Treatment --</option>
+                            <optgroup label="Signature & Body">
+                                <option value="Zenly Signature Massage">Zenly Signature Massage (₱900 - ₱1,200)</option>
+                                <option value="Swedish Massage">Swedish Massage (₱399 - ₱800)</option>
+                                <option value="Combination Massage">Combination Massage (₱550 - ₱950)</option>
+                                <option value="Hilot / Traditional Hilot">Hilot / Traditional Hilot (₱550 - ₱950)</option>
+                                <option value="Deep Tissue Massage">Deep Tissue Massage (₱600 - ₱1,000)</option>
+                                <option value="Lomi-Lomi">Lomi-Lomi (₱600 - ₱1,000)</option>
+                            </optgroup>
+                            <optgroup label="Specialized">
+                                <option value="Pre Natal Massage">Pre Natal Massage (₱550 - ₱950)</option>
+                                <option value="Post Natal Massage">Post Natal Massage (₱550 - ₱950)</option>
+                                <option value="Foot Reflex">Foot Reflex (₱550 - ₱950)</option>
+                            </optgroup>
+                            <optgroup label="Moroccan Bath Rituals">
+                                <option value="Moroccan Bath - Purity Ritual">Moroccan Bath: Purity Ritual (₱1,500)</option>
+                                <option value="Moroccan Bath - Royal Haven Ritual">Moroccan Bath: Royal Haven Ritual (₱2,000)</option>
+                            </optgroup>
+                            <optgroup label="Couple & 2-Hour Packages">
+                                <option value="The Serenity Scape (Couple Pkg A)">The Serenity Scape - Couple Pkg A (₱1,300)</option>
+                                <option value="The Deep Zen Fusion (Couple Pkg B)">The Deep Zen Fusion - Couple Pkg B (₱1,600)</option>
+                                <option value="Relaxation Flow (Pkg 1)">Relaxation Flow - 2 Hrs (₱1,100)</option>
+                                <option value="Balance Therapy (Pkg 2)">Balance Therapy - 2 Hrs (₱1,300)</option>
+                                <option value="Zenly Signature Ritual (Pkg 3)">Zenly Signature Ritual - 2 Hrs (₱1,400)</option>
+                                <option value="Ultimate Zen Experience (Pkg 4)">Ultimate Zen Experience - 2 Hrs (₱1,600)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Preferred Date *</label>
+                        <input type="date" id="date" required class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="time" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Preferred Time (2 PM – 2 AM) *</label>
+                        <select id="time" required class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium">
+                            <option value="">-- Choose Time Slot --</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                            <option value="6:00 PM">6:00 PM</option>
+                            <option value="8:00 PM">8:00 PM</option>
+                            <option value="10:00 PM">10:00 PM</option>
+                            <option value="12:00 AM">12:00 AM</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="promo" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Promo Code (Optional)</label>
+                        <input type="text" id="promo" class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium" placeholder="e.g., BDAY10">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="notes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Special Requests or Notes</label>
+                    <textarea id="notes" rows="3" class="w-full bg-sand-100 border border-sand-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-spa-600 text-slate-900 font-medium" placeholder="Any specific therapist preference or focus area..."></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-spa-600 hover:bg-spa-700 text-white font-bold py-4 rounded-xl text-center shadow-lg transition transform hover:-translate-y-0.5">
+                    Confirm Reservation Request
+                </button>
+
+                <div id="booking-success" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl text-center text-sm font-medium">
+                    🎉 Thank you! Your booking request has been submitted successfully. We will call or text you shortly to confirm your appointment!
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="location" class="py-20 bg-sand-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-spa-600 font-semibold uppercase tracking-widest text-xs block mb-3">Find Us</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-spa-900 mb-6">Visit Our Sanctuary in Marikina</h2>
+                    <p class="text-slate-700 mb-8 leading-relaxed">
+                        Conveniently situated on the 2nd floor in Concepcion Uno, our spa is easily accessible with ample parking and a serene atmosphere waiting for you.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-spa-600 text-white flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-spa-900 mb-1">Address</h4>
+                                <p class="text-slate-700 text-sm">1 C. Bautista St, Concepcion Uno, Marikina City, 1807 Metro Manila (2nd Floor)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-spa-600 text-white flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-spa-900 mb-1">Operating Hours</h4>
+                                <p class="text-slate-700 text-sm">Monday – Sunday: <span class="font-semibold text-spa-900">2:00 PM – 2:00 AM</span> (Open Daily)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-spa-600 text-white flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-spa-900 mb-1">Direct Contact</h4>
+                                <p class="text-slate-700 text-sm">Mobile: <a href="tel:09452352792" class="text-spa-600 font-bold hover:underline">0945 235 2792</a></p>
+                                <p class="text-slate-700 text-sm">Email: zenlyhavenspa@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white h-[400px] relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.255955684784!2d121.1009109!3d14.6432101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9736b04b901%3A0x8e8334860b2401db!2s1%20C.%20Bautista%2C%20Marikina%2C%201807%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1710000000000!5m2!1sen!2sph" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Zenly Haven Spa Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-spa-950 text-sand-200 py-12 border-t border-spa-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.jpg" alt="Zenly Haven Spa Logo" class="w-10 h-10 rounded-full object-cover">
+                <div>
+                    <span class="font-serif text-lg font-bold text-white">Zenly Haven Spa</span>
+                    <span class="text-xs text-sand-300 block">Harmony in Every Touch.</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <a href="#about" class="text-sand-200 hover:text-white transition">About</a>
+                <a href="#services" class="text-sand-200 hover:text-white transition">Services</a>
+                <a href="#packages" class="text-sand-200 hover:text-white transition">Packages</a>
+                <a href="#booking" class="text-sand-200 hover:text-white transition">Book Now</a>
+            </div>
+
+            <div class="flex items-center gap-4 text-lg">
+                <a href="https://www.facebook.com/share/1E2ApgbUbA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-spa-900 text-sand-200 flex items-center justify-center hover:bg-spa-600 hover:text-white transition" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/zenlyhaven?vrfl=YjIzNjN0aXUwcDdl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-spa-900 text-sand-200 flex items-center justify-center hover:bg-spa-600 hover:text-white transition" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@zenly.haven.spa?_r=1&_t=ZS-9AWWlmXJ1aW" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-spa-900 text-sand-200 flex items-center justify-center hover:bg-spa-600 hover:text-white transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="tel:09452352792" class="w-10 h-10 rounded-full bg-spa-900 text-sand-200 flex items-center justify-center hover:bg-spa-600 hover:text-white transition" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 mt-8 border-t border-spa-900/50 text-center text-xs text-sand-300">
+            &copy; 2026 Zenly Haven Spa. All rights reserved. Located in Concepcion Uno, Marikina City.
+        </div>
+    </footer>
+
+    <!-- Floating Olive Green Messenger Widget -->
+    <a href="https://www.facebook.com/share/1E2ApgbUbA/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 bg-[#556b2f] hover:bg-[#435524] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-110 focus:outline-none border-2 border-white/30"
+       aria-label="Chat with us on Facebook Messenger">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+
+    <!-- Firebase SDK & Real-Time Booking Sync -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getFirestore, collection, addDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyB44WJWU4k03TT8I4HT-UpXgaBt52a2fhc",
+            authDomain: "zanily-haven-spa.firebaseapp.com",
+            projectId: "zanily-haven-spa",
+            storageBucket: "zanily-haven-spa.firebasestorage.app",
+            messagingSenderId: "14216860344",
+            appId: "1:14216860344:web:5920f482ba88ba54875a4d"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const bookingForm = document.getElementById('booking-form');
+        const bookingSuccess = document.getElementById('booking-success');
+        const dateInput = document.getElementById('date');
+        const timeSelect = document.getElementById('time');
+
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+
+        dateInput.addEventListener('change', async (e) => {
+            const selectedDate = e.target.value;
+            Array.from(timeSelect.options).forEach(opt => {
+                opt.disabled = false;
+                opt.text = opt.text.replace(" (Already Booked)", "");
+            });
+
+            if (!selectedDate) return;
+
+            try {
+                const q = query(collection(db, "bookings"), where("date", "==", selectedDate));
+                const querySnapshot = await getDocs(q);
+                
+                const bookedTimes = [];
+                querySnapshot.forEach((doc) => {
+                    bookedTimes.push(doc.data().time);
+                });
+
+                Array.from(timeSelect.options).forEach(option => {
+                    if (bookedTimes.includes(option.value)) {
+                        option.disabled = true;
+                        option.text += " (Already Booked)";
+                    }
+                });
+            } catch (error) {
+                console.error("Error fetching availability:", error);
+            }
+        });
+
+        bookingForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const bookingData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                date: dateInput.value,
+                time: timeSelect.value,
+                promo: document.getElementById('promo').value || 'None',
+                notes: document.getElementById('notes').value || 'None',
+                createdAt: new Date().toISOString()
+            };
+
+            try {
+                await addDoc(collection(db, "bookings"), bookingData);
+                bookingSuccess.classList.remove('hidden');
+                bookingForm.reset();
+                setTimeout(() => bookingSuccess.classList.add('hidden'), 6000);
+            } catch (error) {
+                console.error("Error saving booking:", error);
+                alert("There was an error submitting your booking. Please try calling us directly at 0945 235 2792.");
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
